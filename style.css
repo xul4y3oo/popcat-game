@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* 淺灰色背景 */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* 計數器樣式 */
+.counter {
+    font-size: 8rem; /* 很大的字體 */
+    font-weight: bold;
+    color: #e74c3c; /* 醒目的紅色 */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 遊戲區域/圖片樣式 */
+#game-area {
+    cursor: pointer; /* 滑鼠變成手型 */
+    user-select: none; /* 防止圖片被選中 */
+    transition: transform 0.05s ease; /* 輕微的縮放動畫 */
+}
+
+#game-area:active {
+    transform: scale(0.98); /* 點擊時縮小一點 */
+}
+
+#cat-image {
+    width: 100%;
+    max-width: 400px; /* 限制圖片最大寬度 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 指示文字 */
+.instruction {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #34495e;
+}
